@@ -1,5 +1,5 @@
-## Status
-🚧 In Progress
+# Status
+## 🚧 In Progress
 
 # React + TypeScript + Vite
 
