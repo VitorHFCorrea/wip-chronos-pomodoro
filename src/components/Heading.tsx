@@ -7,10 +7,12 @@ import { Button } from './Button'
 
 export function Heading() {
   return (
-    <div className='flex flex-col items-center p-5'>
-      <div className='flex flex-col items-center my-11 text-primary'>
-        <button><TimerIcon className='w-16 h-16'/></button>
-        <h1 className='text-[2.70rem] font-bold '>
+    <div className='flex flex-col items-center mt-10 gap-10'>
+      <div className='flex flex-col items-center text-primary cursor-pointer rounded-full'>
+        <button>
+          <TimerIcon className='w-16 h-16 cursor-pointer'/>
+        </button>
+        <h1 className='text-[2.70rem] font-bold'>
           Chronos
         </h1>
       </div>
