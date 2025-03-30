@@ -37,3 +37,18 @@
   --color-disabled: #555f7d;
   --color-disabled: #aab3cc;
 }
+
+input:focus::placeholder {
+  opacity: 00;
+  transition-duration: 150ms;
+}
+
+input::placeholder {
+  opacity: 100;
+  transition-duration: 150ms;
+}
+
+.TextoTempo{
+  font-size: clamp(8rem, 30vw, 9.75rem);
+}
+

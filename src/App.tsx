@@ -5,10 +5,12 @@ import { Heading } from './components/Heading'
 
 export function App() {
   return (
-    <div className=' flex flex-col min-w-screen min-h-screen overflow-hidden bg-gradient-to-br bg-att from-mygray-900 to-mygray-700 '>
-      <Heading />
-      <FocusSection />
-      <Footer />
+    <div className='flex justify-center w-full h-full bg-gradient-to-br from-mygray-900 to-mygray-700'>
+      <div className='max-w-[98rem] min-h-screen flex flex-col overflow-hidden p-[3.2rem] '>
+        <Heading />
+        <FocusSection />
+        <Footer />
+      </div>
     </div>
   )
 }
