@@ -1,37 +1,21 @@
+import { CirclePlayIcon } from 'lucide-react'
 import { Button } from './Button'
-import { CirclePlay } from 'lucide-react'
-import { Cicle } from './Cicle'
+import { Cycles } from './Cycles'
+import { Input } from './Input'
+import { CountDown } from './CountDown'
 
 export function FocusSection() {
   return (
-    <div className='flex flex-col items-center justify-center w-screen'>
-      <p className='text-default text-[9.75rem] font-bold my-5'>00:00</p>
-
-      <input
-        type='text'
-        placeholder='Ex.: Estudar para a prova'
-        className='
-        w-64 p-2 text-center text-default rounded-lg
-        border-b-2 border-primary
-        focus:outline-none focus:ring-2 focus:ring-primary 
-        placeholder:italic placeholder:text-sm placeholder:text-mygray-400'
-      />
-      <div className='flex flex-col items-center justify-center w-screen gap-5 my-10'>
+    <div className='flex flex-col items-center justify-center w-full'>
+      <CountDown />
+      <Input id='idInput' type='text' placeholder='estudar para a prova...'/>
+      <div className='flex flex-col items-center justify-center w-full gap-5 my-10'>
         <p className='text-default font-bold'>
-          Foque <span className='font-normal'>por </span> 25min
+          Foque <span className='font-normal'>por</span> 25min
         </p>
-        <div className='flex gap-2'>
-          <Cicle className='bg-primary'></Cicle>
-          <Cicle className='bg-warning'></Cicle>
-          <Cicle className='bg-primary'></Cicle>
-          <Cicle className='bg-warning'></Cicle>
-          <Cicle className='bg-primary'></Cicle>
-          <Cicle className='bg-info'></Cicle>
-        </div>
+        <Cycles/>
       </div>
-      <Button className='mb-10'>
-        <CirclePlay className='w-60 h-9' />
-      </Button>
+      <Button icon={<CirclePlayIcon className='w-60 h-9'/>} />
     </div>
   )
 }
