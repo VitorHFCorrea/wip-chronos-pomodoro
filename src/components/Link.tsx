@@ -1,5 +1,5 @@
 type LinkProps = {
-  children: React.ReactNode
+  children: string
 }
 
 export function Link({ children }: LinkProps) {
