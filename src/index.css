@@ -38,8 +38,26 @@
   --color-disabled: #aab3cc;
 }
 
+[data-theme='light'] {
+  --color-mygray-100: #0a0f1a;
+  --color-mygray-200: #181f2e;
+  --color-mygray-300: #272f43;
+  --color-mygray-400: #363d56;
+  --color-mygray-500: #454f6a;
+  --color-mygray-600: #555f7d;
+  --color-mygray-700: #aab3cc;
+  --color-mygray-800: #cdd3e1;
+  --color-mygray-900: #e6e9f0;
+
+  --color-default: #0a0f1a;
+  --color-muted: #272f43;
+
+  --color-link-color: #0b8a60;
+  --color-link-hover: #065f46;
+}
+
 input:focus::placeholder {
-  opacity: 00;
+  opacity: 0;
   transition-duration: 150ms;
 }
 
@@ -51,4 +69,5 @@ input::placeholder {
 .TextoTempo{
   font-size: clamp(8rem, 30vw, 9.75rem);
 }
+
 
