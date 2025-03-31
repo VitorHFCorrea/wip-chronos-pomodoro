@@ -15,7 +15,7 @@ export function FocusSection() {
         </p>
         <Cycles/>
       </div>
-      <Button icon={<CirclePlayIcon className='w-60 h-9'/>} />
+      <Button icon={<CirclePlayIcon className='w-60 h-9'/>} title='Inicializar'/>
     </div>
   )
 }
