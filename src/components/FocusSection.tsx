@@ -6,10 +6,10 @@ import { CountDown } from './CountDown'
 
 export function FocusSection() {
   return (
-    <div className='flex flex-col items-center justify-center w-full'>
+    <div className='flex flex-col items-center justify-center'>
       <CountDown />
       <Input id='idInput' type='text' placeholder='estudar para a prova...'/>
-      <div className='flex flex-col items-center justify-center w-full gap-5 my-10'>
+      <div className='flex flex-col items-center justify-center gap-5 my-10'>
         <p className='text-default font-bold'>
           Foque <span className='font-normal'>por</span> 25min
         </p>
