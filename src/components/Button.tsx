@@ -1,7 +1,6 @@
 type ButtonProps = {
   icon: React.ReactNode
   title: string
-  aria
   className?: string
   onClick?: () => void
 }
