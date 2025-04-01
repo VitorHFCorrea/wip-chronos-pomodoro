@@ -1,15 +1,10 @@
-import { FocusSection } from './components/FocusSection'
-import { Footer } from './components/Footer'
-import { Heading } from './components/Heading'
+import { Home } from './pages/Home'
 
 export function App() {
   return (
-    <div className='flex justify-center w-full h-full bg-gradient-to-br from-mygray-900 to-mygray-700 transition duration-300'>
-      <div className='max-w-[98rem] min-h-screen flex flex-col overflow-hidden p-[3.2rem] '>
-        <Heading />
-        <FocusSection />
-        <Footer />
-      </div>
+    <div className='flex flex-col bg-gradient-to-br from-mygray-900 to-mygray-700 transition duration-300 
+    py-8 sm:py-12 lg:py-[3.2rem] min-w-screen min-h-screen'>
+      <Home/>
     </div>
   )
 }
